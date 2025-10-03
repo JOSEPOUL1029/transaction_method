@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction_btn</title>
+    <style>
+        body{
+            background:linear-gradient(to right, #f8f9fa, #e9ecef);
+        }
+        .container h1{
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: bolder;
+            color: #0a0906;
+            margin-bottom: 30px;
+        }
+         .conn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+         }
+            .m-btn, .T-btn, .a-btn, .h-btn{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            button{
+                padding: 30px 40px;
+                font-size: 32px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #007bff;
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+        .tigo{color: #ffcc00; font-weight: bold;}
+        .airt{color: #ffcc00; font-weight: bold;}
+        .halo{color: #ff6600; font-weight: bold;background-color: white;padding: 5px 10px;border-radius: 4px;}
+        p{font-size: 2rem;font-weight: bolder;}
+        .number{font-size: 2rem;font-weight: bolder;}
+        .info{
+            .name{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                color: orange;
+                padding: 10px;
+            }
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        label{
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        /* for media queries  web responsiveness design */
+        @media (max-width: 768px){
+            .conn{
+                flex-direction: column;
+            }
+            button{
+                font-size: 24px;
+                padding: 20px 30px;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            .number{
+                font-size: 1.5rem;
+            }
+            .info{
+                font-size: 1.2rem;
+            }
+            label{
+                font-size: 1.2rem;
+            }
+            body{
+                font-size: 14px;
+            }
+            .name{
+                font-size: 1.4rem;
+            }
+        }
+        /* responsivenes for  tablet devices */
+        @media (max-width: 1024px){
+            button{
+                font-size: 20px;
+                padding: 15px 20px;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            .number{
+                font-size: 1.2rem;
+            }
+            .info{
+                font-size: 1rem;
+            }
+            label{
+                font-size: 1rem;
+            }
+            body{
+                font-size: 12px;
+            }
+            .name{
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Payment Method</h1>
+    <div class="conn">
+        <div class="m-btn">
+            <p>Vodacom</p>
+            <button style="background-color: red;font-weight: bolder;">M-pesa</button>
+        </div>
+            <div class="T-btn">
+            <p>Tigo</p>
+            <button style="background-color:  #0056b3;">Tigo<span class="tigo">pesa</span></button>
+        </div>
+                <div class="a-btn">
+            <p>Airtel</p>
+            <button style="padding: 10px 40px;background-color: red;">Airtel<span class="airt"><br>money</span></button>
+        </div>
+            <div class="h-btn">
+            <p>Halotel</p>
+            <button style="background-color:  #ff6600;color: white;">Halo<span class="halo">pesa</span></button>
+        </div>
+    </div>
+    <div class="info">
+        <p>Use the following details to make payment</p>
+        <label for="number"class="number">Number: +255 760874580</label><br>
+     <label for="name" class="name">Name: JOSEPOUL1029</label>
+</div>
+</body>
+</html>
